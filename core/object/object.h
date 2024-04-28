@@ -191,7 +191,7 @@ struct PropertyInfo {
 			hint((PropertyHint)pinfo.hint),
 			hint_string(*reinterpret_cast<String *>(pinfo.hint_string)),
 			usage(pinfo.usage),
-			alias(pinfo.alias) {}
+			alias(*reinterpret_cast<StringName *>(pinfo.alias)) {}
 
 	bool operator==(const PropertyInfo &p_info) const {
 		return ((type == p_info.type) &&
