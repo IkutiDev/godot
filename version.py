@@ -1,5 +1,5 @@
 short_name = "godot"
-name = "Godot Engine"
+name = "Godot Engine Talos version 0.1"
 major = 4
 minor = 2
 patch = 2
